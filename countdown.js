@@ -7,7 +7,6 @@ const Countdown = (() => {
       let now = new Date();
       let time = (nextMidnight.getTime() - now.getTime())/1000;   
       if(time < 0) {
-        setGameInfo()
         nextMidnight = new Date();
         nextMidnight.setHours(24,0,0,0); 
         return getRemainingTime();

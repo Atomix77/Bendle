@@ -17,7 +17,7 @@ function timeChecker() {
 }
 
 function setGameInfo() {
-  localStorage.setItem("bendleSetUp", 0);
+  localStorage.setItem("bendleSetUp", 1);
   setEasyCharacter();
   localStorage.setItem("bendleEasy_guessCount",0);
   localStorage.setItem("bendleEasy_correct",0);

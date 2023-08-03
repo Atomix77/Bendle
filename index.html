@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000"/>
+    <title> Bendle </title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" 
+    crossorigin="anonymous"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body onclick="dropDown()" onload="getCharacterInfo(); loadGameNormal()" >
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbarSections">
+            <div class="navbarSection1">
+                <div class="navbarSection1" id="menu" onclick="levelSelect()">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </div>
+            </div>
+            <div class="navbarSection2">
+                <a id="title" href="index.html"> BENDLE</a>
+            </div>
+            <div class="navbarSection3">
+                <i id="help" class="fa-solid fa-circle-question" onclick="howToPlay()"></i>
+                <i id="home"class="fa-solid fa-house" onclick="homeScreen()" onload="loadGameNormal()"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Level Select Menu -->
+    <div class="navbarMenuSelect">
+        <div class="nothing" id="levelMenu">
+            <a class="levelEasy" id="levelEasy" href="easy.html"> Easy</a>
+            <a class="levelNormal" id="levelNormal" href="index.html"> Normal </a>
+            <a class="levelHard" id="levelHard" href="hard.html"> Hard</a>
+            <a class="levelImpossible" id="levelImpossible" href="impossible.html"> Impossible</a>
+        </div>
+    </div>
+    <!-- How To Play Screen -->
+    <div class="navbarPlayMenu">
+        <div class="nothing" id="playMenu">
+            <div class="playTitle" id="playTitle"> How To Play:</div>
+            <div class="playInfo" id="playInfo">Guess the Avatar Legends character.<br>
+                After each guess you will receive hints about the character.<br>
+                1st hint: Characters ethnicity<br>
+                2nd hint: Characters nationality<br>
+                3rd hint: Characters main fighting Style<br>
+                4th hint: Characters date of birth and date of death (before/after the Air nomad Genocide)<br>
+                5th hint: Characters gender and species<br>
+                6th hint: Information about the character<br>
+                7th hint: Additional information about the character<br>
+                8th hint: Picture of the character
+            </div>
+            <div class="difficultyTitle" id="difficultyTitle"> Difficulties:</div>
+            <div class="difficultyInfo" id="difficultyInfo">
+                Easy: Main characters from ATLA and LOK<br>
+                Normal: Well known characters from ATLA and LOK<br>
+                Hard: Adds lesser known characters from all media<br>
+                Impossible: Adds all named characters from the list<br>
+                (All 4 difficulties can be played each day)
+            </div>
+            <div class="informationTitle" id="informationTitle"> Information:</div>
+            <div class="informationInfo" id="informationInfo">
+                The list of characters and their information is from the Avatar Wiki.<br>
+                <a class="WikiLink" href="https://avatar.fandom.com/wiki/Category:Characters" target="_blank"> List of Avatar characters</a>
+            </div>
+        </div>
+    </div>
+    <!-- Home Screen -->
+    <div class="navbarHomeScreen">
+        <div class="nothing" id="homeScreen">
+            <div class="resultsTitle" id="resultsTitle"> Results:</div>
+            <div class="resultsInfo" id="resultsInfo">
+                <i id="resultsInfo">Easy: </i> 
+                <div id="resultsEasy"> </div>
+                <i id="resultsInfo"> <br> Normal:</i>
+                <div id="resultsNormal"> </div>
+                <i id="resultsInfo"> <br> Hard:</i>
+                <div id="resultsHard"> </div>
+                <i id="resultsInfo"> <br> Impossible:</i>
+                <div id="resultsImpossible"></div>
+            </div>
+            <div class="countdown" id="countdown"> Next Bendle: </div>
+            <div class="countdownInfo" id="countdownInfo">
+            </div>
+        </div>
+    </div>
+    <!-- Main Section -->
+    <div class="main" id="main">
+        <!-- Main Header -->
+        <div class="mainSection">
+            <div class="mainTitle"> 
+                ATLA: Character Guessing Game
+            </div>
+            <div class="level"> 
+                NORMAL 
+            </div>
+        </div>  
+        <!-- Dropdown Menu -->
+        <div class="dropDown">
+            <form>
+                <div class="dropDownMain" id="dropDownMain"></div>
+                <div class="dropDownMenu" id="dropDownMenu">
+                    <input list="characterSelect" id="characterSelect" type="text" placeholder="Search.." onkeyup="filterItems()"/>
+                    <div class="dropDownItems" id="dropDownItems" onclick="characterSelected()">
+                        <option class="dropDownItem" id="SelectaCharacter"> Select a Character </option>
+                        <option class="dropDownItem" id="Aang"> Aang </option>
+                        <option class="dropDownItem" id="Amon"> Amon </option>
+                        <option class="dropDownItem" id="Appa"> Appa </option>
+                        <option class="dropDownItem" id="AsamiSato"> Asami Sato </option>
+                        <option class="dropDownItem" id="Azula"> Azula </option>
+                        <option class="dropDownItem" id="Azulon"> Azulon </option>
+                        <option class="dropDownItem" id="Bato"> Bato </option>
+                        <option class="dropDownItem" id="Bolin"> Bolin </option>
+                        <option class="dropDownItem" id="Bumi"> Bumi </option>
+                        <option class="dropDownItem" id="Bumi"> Bumi (King of Omashu) </option>
+                        <option class="dropDownItem" id="CabbageMerchant"> Cabbage Merchant</option>
+                        <option class="dropDownItem" id="TheDuke"> The Duke </option>
+                        <option class="dropDownItem" id="Fang"> Fang </option>
+                        <option class="dropDownItem" id="Gyatso"> Gyatso </option>
+                        <option class="dropDownItem" id="Hakoda"> Hakoda </option>
+                        <option class="dropDownItem" id="Hama"> Hama </option>
+                        <option class="dropDownItem" id="Haru"> Haru </option>
+                        <option class="dropDownItem" id="Ikki"> Ikki </option>
+                        <option class="dropDownItem" id="Iroh"> Iroh </option>
+                        <option class="dropDownItem" id="JeongJeong"> Jeong Jeong </option>
+                        <option class="dropDownItem" id="Jet"> Jet </option>
+                        <option class="dropDownItem" id="Jinora"> Jinora </option>
+                        <option class="dropDownItem" id="Katara"> Katara </option>
+                        <option class="dropDownItem" id="Korra"> Korra </option>
+                        <option class="dropDownItem" id="Kuei"> Kuei </option>
+                        <option class="dropDownItem" id="Mai"> Mai </option>
+                        <option class="dropDownItem" id="Mako"> Mako </option>
+                        <option class="dropDownItem" id="Momo"> Momo </option>
+                        <option class="dropDownItem" id="Ozai"> Ozai </option>
+                        <option class="dropDownItem" id="Roku"> Roku </option>
+                        <option class="dropDownItem" id="Sokka"> Sokka </option>
+                        <option class="dropDownItem" id="Suki"> Suki </option>
+                        <option class="dropDownItem" id="Tenzin"> Tenzin </option>
+                        <option class="dropDownItem" id="TophBeifong"> Toph Beifong </option>
+                        <option class="dropDownItem" id="TyLee"> TyLee </option>
+                        <option class="dropDownItem" id="Zuko"> Zuko </option>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Submit Button -->
+        <div class="submitButton" id="submitButton">
+            <button type="submit" class="button" id="button" onclick="submitGuess()"> Submit </button>
+        </div>
+        <!-- Character Information -->
+        <div class="characterInformation">
+            <div class="nothing" id="characterTitle"> Character:</div>
+            <div class="nothing" id="characterInfo"></div>
+            <div class="nothing" id="wikiLink"> Avatar Wiki Link:</div>
+            <div class="nothing" id="wikiInfo"></div>
+            <div class="nothing" id="guess8"> No Guess</div>
+            <div class="nothing" id="pictureTitle"> Picture: </div>
+            <div class="nothing" id="pictureInfo"></div>
+            <div class="nothing" id="guess7"> No Guess</div>
+            <div class="nothing" id="addInfoTitle"> Additional Information: </div>
+            <div class="nothing" id="addInfoInfo"></div>
+            <div class="nothing" id="guess6"> No Guess</div>
+            <div class="nothing" id="infoTitle"> Information: </div>
+            <div class="nothing" id="infoInfo"></div>
+            <div class="nothing" id="guess5"> No Guess</div>
+            <div class="nothing" id="genderTitle"> Gender: </div>
+            <div class="nothing" id="genderInfo"></div>
+            <div class="nothing" id="speciesTitle"> Species: </div>
+            <div class="nothing" id="speciesInfo"></div>
+            <div class="nothing" id="guess4"> No Guess</div>
+            <div class="nothing" id="bornTitle"> Born: </div>
+            <div class="nothing" id="bornInfo"></div>
+            <div class="nothing" id="diedTitle"> Died: </div>
+            <div class="nothing" id="diedInfo"></div>
+            <div class="nothing" id="guess3"> No Guess</div>
+            <div class="nothing" id="fightingTitle">  Main Fighting Style: </div>
+            <div class="nothing" id="benderInfo"></div>
+            <div class="nothing" id="guess2"> No Guess</div>
+            <div class="nothing" id="nationalityTitle"> Nationality: </div>
+            <div class="nothing" id="nationInfo">  </div>
+            <div class="nothing" id="guess1"> No Guess</div>
+            <div class="descriptions" id="ethnicityTitle"> Ethnicity: </div>
+            <div class="information" id="ethnicityInfo">  </div>
+        </div>
+    </div>
+</body>
+
+<script src="appNormal.js"></script>
+<script src="app.js"></script>
+<script src="countdown.js"></script>
+</html>

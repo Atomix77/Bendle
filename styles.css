@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'Albertus Nova Bold';
+    src: url(albertus-nova-bold.ttf);
+  }
+
+html {
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(206,210,219,0.75) 0%, rgba(124, 127, 135, 0.7) 50%, rgba(206,210,219,0.75) 100%), url("elementSymbols.jpg");
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Albertus Nova Bold';
+    font-weight: 500;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar, .navbarSections {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, transparent, rgba(124, 127, 135, 1) 25%, transparent) 70% 1;
+    background-image: linear-gradient(90deg, rgba(206,210,219,0.75) 0%, rgba(124, 127, 135, 0.7) 50%, rgba(206,210,219,0.75) 100%), url("elementSymbols.jpg");
+}
+
+
+.navbarSection1 {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+#menuIcon {   
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbarSection2 {
+    height: 80px;
+    display: flex;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    color: #060709;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #70777e;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbarSection3 {    
+    display: flex;
+    padding: 0 20px;
+}
+
+#help, #home {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#help:hover, #home:hover, #menuIcon:hover {
+    color: #426084;
+    transition: all 0.3s ease;
+}
+
+.levelSelect {
+    background-image: linear-gradient(90deg, rgba(206,210,219,0.75) 0%, rgba(124, 127, 135, 0.7) 50%, rgba(206,210,219,0.75) 100%), url("elementSymbols.jpg");
+    display: block;
+    position: fixed;
+    text-align: center;
+    padding-left: 96.81px;
+    padding-right: 114px;
+    padding-bottom: 25px;
+    margin-top: 80px;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(90deg, transparent, rgba(124, 127, 135, 1) 25%, transparent) 70% 1;
+}
+
+.levelEasy {
+    display: block;
+    padding-top: 25px;
+    color:black;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.levelNormal {
+    display: block;
+    padding-top: 25px;
+    color:black;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.levelHard {
+    display: block;
+    padding-top: 25px;
+    color:black;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.levelImpossible {
+    display: block;
+    padding-top: 25px;
+    color:black;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.levelSelect:hover, .levelEasy:hover, .levelNormal:hover, .levelHard:hover, .levelImpossible:hover {
+    color: #426084;
+    transition: all 0.3s ease;
+}
+
+.playMenu {
+    background-image: linear-gradient(90deg, rgba(206,210,219,0.75) 0%, rgba(124, 127, 135, 0.7) 50%, rgba(206,210,219,0.75) 100%), url("elementSymbols.jpg");
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding-left: 96.81px;
+    padding-right: 114px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    top: 80px;
+    width: 100%;
+}
+
+.playTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.playInfo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height:40px;
+}
+
+.difficultyTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.difficultyInfo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height:40px;
+}
+
+.informationTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.informationInfo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height:40px;
+}
+
+.homeScreen {
+    background-image: linear-gradient(90deg, rgba(206,210,219,0.75) 0%, rgba(124, 127, 135, 0.7) 50%, rgba(206,210,219,0.75) 100%), url("elementSymbols.jpg");
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding-left: 96.81px;
+    padding-right: 114px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    top: 80px;
+    width: 100%;
+}
+
+.resultsTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.resultsInfo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height:40px;
+    font-style: italic;
+}
+
+#resultsEasy, #resultsNormal, #resultsHard, #resultsImpossible {
+    display: inline;
+}
+
+.WikiLink {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.countdown {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.gameInfo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 15px;
+    line-height:50px;
+    color: black;
+}
+
+#countdownInfo {
+    padding: 5px;
+    display: inline-block;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+#countdownInfo .span {
+    display: inline-block;
+}
+
+.countdownInfo .hours, .countdownInfo .minutes, .countdownInfo .seconds {
+    border-radius: 6px;
+    font-size: 1.5rem;
+}
+
+.countdownInfo .hSep, .countdownInfo .mSep {
+    padding: 5px;
+  }
+
+.main {
+    background-image: linear-gradient(90deg, rgba(206,210,219,0.75) 0%, rgba(124, 127, 135, 0.7) 50%, rgba(206,210,219,0.75) 100%), url("elementSymbols.jpg");
+    padding-top: 80px;
+    padding-left: 96.81px;
+    padding-right: 114px;
+}
+
+.mainSection {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    padding-left: 96.81px;
+    padding-right: 114px;
+}
+
+.mainTitle {
+    color: #060709;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #70777e;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 5px;   
+}
+.level {
+    color: #060709;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #70777e;
+    font-size: 2rem;
+    padding-bottom: 10px;  
+}
+
+.dropDown {
+    padding-bottom: 15px;
+}
+
+.dropDownMain {
+    display: block;
+    margin: 0 auto;
+    background-color: #d7dce4;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border: 2px solid #a0b1c7;
+}
+
+.dropDownMain:focus, .dropDownMain:hover {
+    font-size: 1.1rem;
+}
+
+.dropDownMenu {
+    margin: 0 auto;
+    background-color: #d7dce4;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    display: none;
+    border: 2px solid #a0b1c7;
+    border-top: none;
+}
+
+#characterSelect {
+    background-color: #d7dce4;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border: none;
+}
+
+.dropDownItems {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+.dropDownItem {
+    background-color: #d7dce4;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.dropDownItem:focus, .dropDownItem:hover {
+    font-size: 1.1rem;
+}
+
+#SelectaCharacter {
+    background-color: #d7dce4;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.submitButton {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 90px;
+    font-size: large;
+    cursor: pointer;
+    color: black;
+}
+
+.button:hover {
+    color: #426084;
+    transition: all 0.3s ease;
+}
+
+.characterInformation {
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+.descriptions {
+    color: #060709;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #70777e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+
+.information {
+    font-size: 1.5rem;
+}
+
+.picture {
+    width:250;
+    height:350;
+}
+
+.ATLALink {
+    font-size: 1.5rem;
+}
+
+.guess {
+    color: red;
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+
+.nothing {
+    display: none;
+}
+

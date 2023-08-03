@@ -10,7 +10,6 @@ guessCount = localStorage.getItem("bendleImpossible_guessCount");
 characterSelect = localStorage.getItem("bendleImpossible_Character");
 
 // Character dictionary
-
 const characterDictionary = {
   // "": [{characterName: "",
   // ethnicityTitle: "",

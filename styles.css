@@ -306,6 +306,7 @@ html {
     margin: 0 auto;
     background-color: #d7dce4;
     width: 60%;
+    max-width: 600px;
     min-width: 480px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -321,6 +322,7 @@ html {
     margin: 0 auto;
     background-color: #d7dce4;
     width: 60%;
+    max-width: 600px;
     min-width: 480px;
     padding-top: 10px;
     padding-bottom: 10px;

@@ -305,7 +305,7 @@ html {
     display: block;
     margin: 0 auto;
     background-color: #d7dce4;
-    width: 600px;
+    width: 60%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
@@ -319,7 +319,7 @@ html {
 .dropDownMenu {
     margin: 0 auto;
     background-color: #d7dce4;
-    width: 600px;
+    width: 60%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;

@@ -9,11 +9,15 @@ function timeChecker() {
   let timeLeft = (nextMidnight.getTime() - now.getTime())/1000;
   if (timeLeft < 0) {
     setGameInfo();
+  } else {
+    if (localStorage.getItem("bendleSetUp") != 1) {
+      setGameInfo();
+    }
   }
 }
 
 function setGameInfo() {
-
+  localStorage.setItem("bendleSetUp", 0);
   setEasyCharacter();
   localStorage.setItem("bendleEasy_guessCount",0);
   localStorage.setItem("bendleEasy_correct",0);

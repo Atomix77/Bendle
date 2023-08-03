@@ -8,7 +8,7 @@ function timeChecker() {
   let now = new Date().toUTCString();
   let nextMidnight = new Date(new Date().setUTCHours(24,0,0,0)).toUTCString();
   if (now == nextMidnight) {
-    setGameInfo()
+    setGameInfo();
     localStorage.setItem("bendleSetUp",1);
   }else {
     if (localStorage.getItem("bendleSetUp") == 0) {

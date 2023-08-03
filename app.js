@@ -2,12 +2,19 @@ easyGuess = parseInt(localStorage.getItem("bendleEasy_guessCount"));
 normalGuess = parseInt(localStorage.getItem("bendleNormal_guessCount"));
 hardGuess = parseInt(localStorage.getItem("bendleHard_guessCount"));
 impossibleGuess = parseInt(localStorage.getItem("bendleImpossible_guessCount"));
+localStorage.setItem("bendleSetUp",0);
 
 function timeChecker() {
   let now = new Date().toUTCString();
   let nextMidnight = new Date(new Date().setUTCHours(24,0,0,0)).toUTCString();
   if (now == nextMidnight) {
     setGameInfo()
+    localStorage.setItem("bendleSetUp",1);
+  }else {
+    if (localStorage.getItem("bendleSetUp") == 0) {
+      setGameInfo()
+      localStorage.setItem("bendleSetUp",1);
+    }
   }
 }
 

@@ -2,7 +2,7 @@ easyGuess = parseInt(localStorage.getItem("bendleEasy_guessCount"));
 normalGuess = parseInt(localStorage.getItem("bendleNormal_guessCount"));
 hardGuess = parseInt(localStorage.getItem("bendleHard_guessCount"));
 impossibleGuess = parseInt(localStorage.getItem("bendleImpossible_guessCount"));
-
+// lolol
 function timeChecker() {
   let now = new Date().toUTCString();
   let nextMidnight = new Date(new Date().setUTCHours(24,0,0,0)).toUTCString();

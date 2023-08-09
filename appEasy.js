@@ -1,5 +1,3 @@
-// Variable Declartion Area
-
 const initialSelection = SelectaCharacter.textContent;
 const initialID = SelectaCharacter;
 
@@ -9,21 +7,8 @@ document.getElementById("dropDownMain").innerHTML = currentSelection;
 guessCount = localStorage.getItem("bendleEasy_guessCount");
 characterSelect = localStorage.getItem("bendleEasy_Character");
 
-// Character dictionary
 
 const characterDictionary = {
-  // "": [{characterName: "",
-  // ethnicityTitle: "",
-  // nationalityTitle: "",
-  // fightingTitle: "",
-  // genderTitle: "",
-  // speciesTitle: "",
-  // bornTitle: "",
-  // diedTitle: "",
-  // infoTitle: "",
-  // addInfoTitle: "",
-  // pictureTitle: "<img src='characterPictures/'> </img>",
-  // wikiLink: "<a href='' class='ATLALink'> Avatar Wiki</a>"}],
   "Aang": [{characterName: "Aang",
   ethnicityTitle:"Air Nomad",
   nationalityTitle: "Southern Air Temple",

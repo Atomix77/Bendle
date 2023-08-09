@@ -503,9 +503,11 @@ function dropDown() {
   var dropDown = document.getElementById("dropDownMenu");
   var button = document.getElementById("submitButton");
   var dropDownMain = document.getElementById("dropDownMain");
+  var searchBar = document.getElementById("characterSelect");
   if (event.target.id == "dropDownMain") {
     if (dropDown.style.display == "none") {
       dropDown.style.display = "block";
+      searchBar.focus();
       button.style.display = "none";
       dropDownMain.style.borderBottom = "none";
     } else {

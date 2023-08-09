@@ -9,7 +9,7 @@ function timeChecker() {
   day = now.getUTCDate();
   month = now.getUTCMonth() + 1;
   year = now.getUTCFullYear();
-  nowDate = (day + "" + month + year);
+  nowDate = (day + "" + month + "" + year);
   if (currentDate != nowDate) {
     setGameInfo()
     localStorage.setItem("currentDate",nowDate);

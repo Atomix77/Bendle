@@ -566,7 +566,7 @@ function setHardCharacter() {
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*63);
+  number = Math.floor(Math.random()*74);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -759,6 +759,39 @@ function setImpossibleCharacter() {
       break;
     case 62:
       localStorage.setItem("bendleImpossible_Character","Zhao");
+      break;
+    case 63:
+      localStorage.setItem("bendleImpossible_Character","Aiwei");
+      break;
+    case 64:
+      localStorage.setItem("bendleImpossible_Character","Arnook");
+      break;
+    case 65:
+      localStorage.setItem("bendleImpossible_Character","Baatar");
+      break;
+    case 66:
+      localStorage.setItem("bendleImpossible_Character","Baatar Jr");
+      break;
+    case 67:
+      localStorage.setItem("bendleImpossible_Character","The Big Bad Hippo");
+      break;
+    case 68:
+      localStorage.setItem("bendleImpossible_Character","Bosco");
+      break;
+    case 69:
+      localStorage.setItem("bendleImpossible_Character","The Boulder");
+      break;
+    case 70:
+      localStorage.setItem("bendleImpossible_Character","Chit Sang");
+      break;
+    case 71:
+      localStorage.setItem("bendleImpossible_Character","Chong");
+      break;
+    case 72:
+      localStorage.setItem("bendleImpossible_Character","Combustion Man");
+      break;
+    case 73:
+      localStorage.setItem("bendleImpossible_Character","Desna and Eska");
       break;
     }
   }

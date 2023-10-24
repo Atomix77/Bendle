@@ -114,7 +114,7 @@ const characterDictionary = {
   diedTitle: "Unknown/Alive",
   infoTitle: "Air Nation, United Forces",
   addInfoTitle: "Military official",
-  pictureTitle: "<img src='characterPictures/BumiPicture'> </img>",
+  pictureTitle: "<img src='characterPictures/BumiPicture.webp'> </img>",
   wikiLink: "<a href='https://avatar.fandom.com/wiki/Bumi' class='ATLALink'> Avatar Wiki</a>"}],
   "Bumi (King of Omashu)": [{characterName: "Bumi (King of Omashu)",
   ethnicityTitle: "Earth Kingdom",

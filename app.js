@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*74);
+  number = Math.floor(Math.random()*84);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -562,11 +562,41 @@ function setHardCharacter() {
     case 73:
       localStorage.setItem("bendleHard_Character","Desna and Eska");
       break;
+    case 74:
+      localStorage.setItem("bendleHard_Character","Dock/Xu/Bushi");
+      break;
+    case 75:
+      localStorage.setItem("bendleHard_Character","Fisherman");
+      break;
+    case 76:
+      localStorage.setItem("bendleHard_Character","Fisherman's Wife");
+      break;
+    case 77:
+      localStorage.setItem("bendleHard_Character","Flopsie");
+      break;
+    case 78:
+      localStorage.setItem("bendleHard_Character","Foaming mouth guy");
+      break;
+    case 79:
+      localStorage.setItem("bendleHard_Character","Ginger");
+      break;
+    case 80:
+      localStorage.setItem("bendleHard_Character","Gun");
+      break;
+    case 81:
+      localStorage.setItem("bendleHard_Character","Hahn");
+      break;
+    case 82:
+      localStorage.setItem("bendleHard_Character","Haru's mother");
+      break;
+    case 83:
+      localStorage.setItem("bendleHard_Character","Head of the Dai Li");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*74);
+  number = Math.floor(Math.random()*84);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -632,8 +662,8 @@ function setImpossibleCharacter() {
       localStorage.setItem("bendleImpossible_Character","Zuko");
       break;
     case 21:
-        localStorage.setItem("bendleImpossible_Character","Amon");
-        break;
+      localStorage.setItem("bendleImpossible_Character","Amon");
+      break;
     case 22:
       localStorage.setItem("bendleImpossible_Character","Azulon");
       break;
@@ -793,7 +823,37 @@ function setImpossibleCharacter() {
     case 73:
       localStorage.setItem("bendleImpossible_Character","Desna and Eska");
       break;
-    }
+    case 74:
+      localStorage.setItem("bendleImpossible_Character","Dock/Xu/Bushi");
+      break;
+    case 75:
+      localStorage.setItem("bendleImpossible_Character","Fisherman");
+      break;
+    case 76:
+      localStorage.setItem("bendleImpossible_Character","Fisherman's Wife");
+      break;
+    case 77:
+      localStorage.setItem("bendleImpossible_Character","Flopsie");
+      break;
+    case 78:
+      localStorage.setItem("bendleImpossible_Character","Foaming mouth guy");
+      break;
+    case 79:
+      localStorage.setItem("bendleImpossible_Character","Ginger");
+      break;
+    case 80:
+      localStorage.setItem("bendleImpossible_Character","Gun");
+      break;
+    case 81:
+      localStorage.setItem("bendleImpossible_Character","Hahn");
+      break;
+    case 82:
+      localStorage.setItem("bendleImpossible_Character","Haru's mother");
+      break;
+    case 83:
+      localStorage.setItem("bendleImpossible_Character","Head of the Dai Li");
+      break;
+  }
   }
 
 function loadGameEasy() {

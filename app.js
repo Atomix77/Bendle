@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*84);
+  number = Math.floor(Math.random()*92);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -592,11 +592,35 @@ function setHardCharacter() {
     case 83:
       localStorage.setItem("bendleHard_Character","Head of the Dai Li");
       break;
+    case 84:
+      localStorage.setItem("bendleHard_Character","Herbalist");
+      break;
+    case 85:
+      localStorage.setItem("bendleHard_Character","Hide");
+      break;
+    case 86:
+      localStorage.setItem("bendleHard_Character","Hiroshi Sato");
+      break;
+    case 87:
+      localStorage.setItem("bendleHard_Character","Hope");
+      break;
+    case 88:
+      localStorage.setItem("bendleHard_Character","How");
+      break;
+    case 89:
+      localStorage.setItem("bendleHard_Character","Huan");
+      break;
+    case 90:
+      localStorage.setItem("bendleHard_Character","Iknik Blackstone Varrick");
+      break;
+    case 91:
+      localStorage.setItem("bendleHard_Character","Iroh (United Forces General)");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*84);
+  number = Math.floor(Math.random()*92);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -852,6 +876,30 @@ function setImpossibleCharacter() {
       break;
     case 83:
       localStorage.setItem("bendleImpossible_Character","Head of the Dai Li");
+      break;
+    case 84:
+      localStorage.setItem("bendleImpossible_Character","Herbalist");
+      break;
+    case 85:
+      localStorage.setItem("bendleImpossible_Character","Hide");
+      break;
+    case 86:
+      localStorage.setItem("bendleImpossible_Character","Hiroshi Sato");
+      break;
+    case 87:
+      localStorage.setItem("bendleImpossible_Character","Hope");
+      break;
+    case 88:
+      localStorage.setItem("bendleImpossible_Character","How");
+      break;
+    case 89:
+      localStorage.setItem("bendleImpossible_Character","Huan");
+      break;
+    case 90:
+      localStorage.setItem("bendleImpossible_Character","Iknik Blackstone Varrick");
+      break;
+    case 91:
+      localStorage.setItem("bendleImpossible_Character","Iroh (United Forces General)");
       break;
   }
   }

@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*92);
+  number = Math.floor(Math.random()*101);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -616,11 +616,38 @@ function setHardCharacter() {
     case 91:
       localStorage.setItem("bendleHard_Character","Iroh (United Forces General)");
       break;
+    case 92:
+      localStorage.setItem("bendleHard_Character","Jee");
+      break;
+    case 93:
+      localStorage.setItem("bendleHard_Character","Juicy");
+      break;
+    case 94:
+      localStorage.setItem("bendleHard_Character","Kahchi");
+      break;
+    case 95:
+      localStorage.setItem("bendleHard_Character","Karu");
+      break;
+    case 96:
+      localStorage.setItem("bendleHard_Character","Kay-fon");
+      break;
+    case 97:
+      localStorage.setItem("bendleHard_Character","Koh");
+      break;
+    case 98:
+      localStorage.setItem("bendleHard_Character","Koko");
+      break;
+    case 99:
+      localStorage.setItem("bendleHard_Character","Kuruk");
+      break;
+    case 100:
+      localStorage.setItem("bendleHard_Character","Kya (nonbender)");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*92);
+  number = Math.floor(Math.random()*101);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -901,7 +928,34 @@ function setImpossibleCharacter() {
     case 91:
       localStorage.setItem("bendleImpossible_Character","Iroh (United Forces General)");
       break;
-  }
+    case 92:
+      localStorage.setItem("bendleImpossible_Character","Jee");
+      break;
+    case 93:
+      localStorage.setItem("bendleImpossible_Character","Juicy");
+      break;
+    case 94:
+      localStorage.setItem("bendleImpossible_Character","Kahchi");
+      break;
+    case 95:
+      localStorage.setItem("bendleImpossible_Character","Karu");
+      break;
+    case 96:
+      localStorage.setItem("bendleImpossible_Character","Kay-fon");
+      break;
+    case 97:
+      localStorage.setItem("bendleImpossible_Character","Koh");
+      break;
+    case 98:
+      localStorage.setItem("bendleImpossible_Character","Koko");
+      break;
+    case 99:
+      localStorage.setItem("bendleImpossible_Character","Kuruk");
+      break;
+    case 100:
+      localStorage.setItem("bendleImpossible_Character","Kya (nonbender)");
+      break;
+    }
   }
 
 function loadGameEasy() {

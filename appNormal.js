@@ -498,7 +498,7 @@ const characterDictionary = {
   diedTitle: "Unknown/Alive",
   infoTitle: "Earth Kingdom",
   addInfoTitle: "Inventor",
-  pictureTitle: "<img src='characterPictures/Mechanist.webp'> </img>",
+  pictureTitle: "<img src='characterPictures/MechanistPicture.webp'> </img>",
   wikiLink: "<a href='https://avatar.fandom.com/wiki/Mechanist' class='ATLALink'> Avatar Wiki</a>"}],
   "Meelo": [{characterName: "Meelo",
   ethnicityTitle: "Air Nomad, Water Tribe",

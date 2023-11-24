@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*129);
+  number = Math.floor(Math.random()*140);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -727,11 +727,44 @@ function setHardCharacter() {
     case 128:
       localStorage.setItem("bendleHard_Character","Pathik");
       break;
+    case 129:
+      localStorage.setItem("bendleHard_Character","Pema");
+      break;
+    case 130:
+      localStorage.setItem("bendleHard_Character","Pepper");
+      break;
+    case 131:
+      localStorage.setItem("bendleHard_Character","Poki");
+      break;
+    case 132:
+      localStorage.setItem("bendleHard_Character","Poon");
+      break;
+    case 133:
+      localStorage.setItem("bendleHard_Character","Poppy Beifong");
+      break;
+    case 134:
+      localStorage.setItem("bendleHard_Character","Qin");
+      break;
+    case 135:
+      localStorage.setItem("bendleHard_Character","Raava");
+      break;
+    case 136:
+      localStorage.setItem("bendleHard_Character","Raiko");
+      break;
+    case 137:
+      localStorage.setItem("bendleHard_Character","Ran and Shaw");
+      break;
+    case 138:
+      localStorage.setItem("bendleHard_Character","Rohan");
+      break;
+    case 139:
+      localStorage.setItem("bendleHard_Character","Ryu");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*129);
+  number = Math.floor(Math.random()*140);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -1122,6 +1155,39 @@ function setImpossibleCharacter() {
       break;
     case 128:
       localStorage.setItem("bendleImpossible_Character","Pathik");
+      break;
+    case 129:
+      localStorage.setItem("bendleImpossible_Character","Pema");
+      break;
+    case 130:
+      localStorage.setItem("bendleImpossible_Character","Pepper");
+      break;
+    case 131:
+      localStorage.setItem("bendleImpossible_Character","Poki");
+      break;
+    case 132:
+      localStorage.setItem("bendleImpossible_Character","Poon");
+      break;
+    case 133:
+      localStorage.setItem("bendleImpossible_Character","Poppy Beifong");
+      break;
+    case 134:
+      localStorage.setItem("bendleImpossible_Character","Qin");
+      break;
+    case 135:
+      localStorage.setItem("bendleImpossible_Character","Raava");
+      break;
+    case 136:
+      localStorage.setItem("bendleImpossible_Character","Raiko");
+      break;
+    case 137:
+      localStorage.setItem("bendleImpossible_Character","Ran and Shaw");
+      break;
+    case 138:
+      localStorage.setItem("bendleImpossible_Character","Rohan");
+      break;
+    case 139:
+      localStorage.setItem("bendleImpossible_Character","Ryu");
       break;
     }
   }

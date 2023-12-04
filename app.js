@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*140);
+  number = Math.floor(Math.random()*149);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -760,11 +760,38 @@ function setHardCharacter() {
     case 139:
       localStorage.setItem("bendleHard_Character","Ryu");
       break;
+    case 140:
+      localStorage.setItem("bendleHard_Character","Saikhan");
+      break;
+    case 141:
+      localStorage.setItem("bendleHard_Character","Senna");
+      break;
+    case 142:
+      localStorage.setItem("bendleHard_Character","Shady Shin");
+      break;
+    case 143:
+      localStorage.setItem("bendleHard_Character","Shaozu");
+      break;
+    case 144:
+      localStorage.setItem("bendleHard_Character","Shinu");
+      break;
+    case 145:
+      localStorage.setItem("bendleHard_Character","Sneers");
+      break;
+    case 146:
+      localStorage.setItem("bendleHard_Character","Song");
+      break;
+    case 147:
+      localStorage.setItem("bendleHard_Character","Sung");
+      break;
+    case 148:
+      localStorage.setItem("bendleHard_Character","Szeto");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*140);
+  number = Math.floor(Math.random()*149);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -1188,6 +1215,33 @@ function setImpossibleCharacter() {
       break;
     case 139:
       localStorage.setItem("bendleImpossible_Character","Ryu");
+      break;
+    case 140:
+      localStorage.setItem("bendleImpossible_Character","Saikhan");
+      break;
+    case 141:
+      localStorage.setItem("bendleImpossible_Character","Senna");
+      break;
+    case 142:
+      localStorage.setItem("bendleImpossible_Character","Shady Shin");
+      break;
+    case 143:
+      localStorage.setItem("bendleImpossible_Character","Shaozu");
+      break;
+    case 144:
+      localStorage.setItem("bendleImpossible_Character","Shinu");
+      break;
+    case 145:
+      localStorage.setItem("bendleImpossible_Character","Sneers");
+      break;
+    case 146:
+      localStorage.setItem("bendleImpossible_Character","Song");
+      break;
+    case 147:
+      localStorage.setItem("bendleImpossible_Character","Sung");
+      break;
+    case 148:
+      localStorage.setItem("bendleImpossible_Character","Szeto");
       break;
     }
   }

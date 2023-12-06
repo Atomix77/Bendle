@@ -840,7 +840,7 @@ const characterDictionary = {
   addInfoTitle: "Daughter of the Southern Water Tribe chief, Fire Ferrets' waterbender, Fully realized Avatar",
   pictureTitle: "<img src='characterPictures/KorraPicture.webp'> </img>",
   wikiLink: "<a href='https://avatar.fandom.com/wiki/Korra' class='ATLALink' target='_blank'> Avatar Wiki</a>"}],
-  "Kuei": [{characterName: "Keui",
+  "Kuei": [{characterName: "Kuei",
   ethnicityTitle: "Earth Kingdom",
   nationalityTitle: "Ba Sing Se, Earth Kingdom",
   fightingTitle: "Unknown",

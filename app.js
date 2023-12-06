@@ -245,7 +245,7 @@ function setNormalCharacter() {
       localStorage.setItem("bendleNormal_Character","Jinora");
       break;
     case 35:
-      localStorage.setItem("bendleNormal_Character","Keui");
+      localStorage.setItem("bendleNormal_Character","Kuei");
       break;
     case 36:
       localStorage.setItem("bendleNormal_Character","Hei Bai");
@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*149);
+  number = Math.floor(Math.random()*162);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -443,7 +443,7 @@ function setHardCharacter() {
       localStorage.setItem("bendleHard_Character","Jinora");
       break;
     case 35:
-      localStorage.setItem("bendleHard_Character","Keui");
+      localStorage.setItem("bendleHard_Character","Kuei");
       break;
     case 36:
       localStorage.setItem("bendleHard_Character","Hei Bai");
@@ -787,11 +787,50 @@ function setHardCharacter() {
     case 148:
       localStorage.setItem("bendleHard_Character","Szeto");
       break;
+    case 149:
+      localStorage.setItem("bendleHard_Character","Tahno");
+      break;
+    case 150:
+      localStorage.setItem("bendleHard_Character","Tarrlok");
+      break;
+    case 151:
+      localStorage.setItem("bendleHard_Character","Tashi");
+      break;
+    case 152:
+      localStorage.setItem("bendleHard_Character","Teo");
+      break;
+    case 153:
+      localStorage.setItem("bendleHard_Character","Than");
+      break;
+    case 154:
+      localStorage.setItem("bendleHard_Character","Tho");
+      break;
+    case 155:
+      localStorage.setItem("bendleHard_Character","Tonraq");
+      break;
+    case 156:
+      localStorage.setItem("bendleHard_Character","Toza");
+      break;
+    case 157:
+      localStorage.setItem("bendleHard_Character","Tu");
+      break;
+    case 158:
+      localStorage.setItem("bendleHard_Character","Tui");
+      break;
+    case 159:
+      localStorage.setItem("bendleHard_Character","Two Toed Ping");
+      break;
+    case 160:
+      localStorage.setItem("bendleHard_Character","Tycho");
+      break;
+    case 161:
+      localStorage.setItem("bendleHard_Character","Tyro");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*149);
+  number = Math.floor(Math.random()*162);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -899,7 +938,7 @@ function setImpossibleCharacter() {
       localStorage.setItem("bendleImpossible_Character","Jinora");
       break;
     case 35:
-      localStorage.setItem("bendleImpossible_Character","Keui");
+      localStorage.setItem("bendleImpossible_Character","Kuei");
       break;
     case 36:
       localStorage.setItem("bendleImpossible_Character","Hei Bai");
@@ -1242,6 +1281,45 @@ function setImpossibleCharacter() {
       break;
     case 148:
       localStorage.setItem("bendleImpossible_Character","Szeto");
+      break;
+    case 149:
+      localStorage.setItem("bendleImposssible_Character","Tahno");
+      break;
+    case 150:
+      localStorage.setItem("bendleImposssible_Character","Tarrlok");
+      break;
+    case 151:
+      localStorage.setItem("bendleImposssible_Character","Tashi");
+      break;
+    case 152:
+      localStorage.setItem("bendleImposssible_Character","Teo");
+      break;
+    case 153:
+      localStorage.setItem("bendleImposssible_Character","Than");
+      break;
+    case 154:
+      localStorage.setItem("bendleImposssible_Character","Tho");
+      break;
+    case 155:
+      localStorage.setItem("bendleImposssible_Character","Tonraq");
+      break;
+    case 156:
+      localStorage.setItem("bendleImposssible_Character","Toza");
+      break;
+    case 157:
+      localStorage.setItem("bendleImposssible_Character","Tu");
+      break;
+    case 158:
+      localStorage.setItem("bendleImposssible_Character","Tui");
+      break;
+    case 159:
+      localStorage.setItem("bendleImposssible_Character","Two Toed Ping");
+      break;
+    case 160:
+      localStorage.setItem("bendleImposssible_Character","Tycho");
+      break;
+    case 161:
+      localStorage.setItem("bendleImposssible_Character","Tyro");
       break;
     }
   }

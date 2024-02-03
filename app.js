@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*162);
+  number = Math.floor(Math.random()*168);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -826,11 +826,29 @@ function setHardCharacter() {
     case 161:
       localStorage.setItem("bendleHard_Character","Tyro");
       break;
+    case 162:
+      localStorage.setItem("bendleHard_Character","Ummi");
+      break;
+    case 163:
+      localStorage.setItem("bendleHard_Character","Vaatu");
+      break;
+    case 164:
+      localStorage.setItem("bendleHard_Character","Vachir");
+      break;
+    case 165:
+      localStorage.setItem("bendleHard_Character","Viper");
+      break;
+    case 166:
+      localStorage.setItem("bendleHard_Character","Wan");
+      break;
+    case 167:
+      localStorage.setItem("bendleHard_Character","Wei and Wing");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*162);
+  number = Math.floor(Math.random()*168);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -1320,6 +1338,24 @@ function setImpossibleCharacter() {
       break;
     case 161:
       localStorage.setItem("bendleImposssible_Character","Tyro");
+      break;
+    case 162:
+      localStorage.setItem("bendleImpossible_Character","Ummi");
+      break;
+    case 163:
+      localStorage.setItem("bendleImpossible_Character","Vaatu");
+      break;
+    case 164:
+      localStorage.setItem("bendleImpossible_Character","Vachir");
+      break;
+    case 165:
+      localStorage.setItem("bendleImpossible_Character","Viper");
+      break;
+    case 166:
+      localStorage.setItem("bendleImpossible_Character","Wan");
+      break;
+    case 167:
+      localStorage.setItem("bendleImpossible_Character","Wei and Wing");
       break;
     }
   }

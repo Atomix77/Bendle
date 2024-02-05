@@ -1340,46 +1340,46 @@ function setImpossibleCharacter() {
       localStorage.setItem("bendleImpossible_Character","Sung");
       break;
     case 148:
-      localStorage.setItem("bendleImpossible_Character","Szeto");
+      localStorage.setItem("bendleImpossble_Character","Szeto");
       break;
     case 149:
-      localStorage.setItem("bendleImposssible_Character","Tahno");
+      localStorage.setItem("bendleImpossible_Character","Tahno");
       break;
     case 150:
-      localStorage.setItem("bendleImposssible_Character","Tarrlok");
+      localStorage.setItem("bendleImpossible_Character","Tarrlok");
       break;
     case 151:
-      localStorage.setItem("bendleImposssible_Character","Tashi");
+      localStorage.setItem("bendleImpossible_Character","Tashi");
       break;
     case 152:
-      localStorage.setItem("bendleImposssible_Character","Teo");
+      localStorage.setItem("bendleImpossible_Character","Teo");
       break;
     case 153:
-      localStorage.setItem("bendleImposssible_Character","Than");
+      localStorage.setItem("bendleImpossible_Character","Than");
       break;
     case 154:
-      localStorage.setItem("bendleImposssible_Character","Tho");
+      localStorage.setItem("bendleImpossible_Character","Tho");
       break;
     case 155:
-      localStorage.setItem("bendleImposssible_Character","Tonraq");
+      localStorage.setItem("bendleImpossible_Character","Tonraq");
       break;
     case 156:
-      localStorage.setItem("bendleImposssible_Character","Toza");
+      localStorage.setItem("bendleImpossible_Character","Toza");
       break;
     case 157:
-      localStorage.setItem("bendleImposssible_Character","Tu");
+      localStorage.setItem("bendleImpossible_Character","Tu");
       break;
     case 158:
-      localStorage.setItem("bendleImposssible_Character","Tui");
+      localStorage.setItem("bendleImpossible_Character","Tui");
       break;
     case 159:
-      localStorage.setItem("bendleImposssible_Character","Two Toed Ping");
+      localStorage.setItem("bendleImpossible_Character","Two Toed Ping");
       break;
     case 160:
-      localStorage.setItem("bendleImposssible_Character","Tycho");
+      localStorage.setItem("bendleImpossible_Character","Tycho");
       break;
     case 161:
-      localStorage.setItem("bendleImposssible_Character","Tyro");
+      localStorage.setItem("bendleImpossible_Character","Tyro");
       break;
     case 162:
       localStorage.setItem("bendleImpossible_Character","Ummi");

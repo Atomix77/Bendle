@@ -335,7 +335,7 @@ function setNormalCharacter() {
 } 
 
 function setHardCharacter() {
-  number = Math.floor(Math.random()*168);
+  number = Math.floor(Math.random()*182);
   switch (number) {
     case 0:
       localStorage.setItem("bendleHard_Character","Aang");
@@ -844,11 +844,53 @@ function setHardCharacter() {
     case 167:
       localStorage.setItem("bendleHard_Character","Wei and Wing");
       break;
+    case 168:
+      localStorage.setItem("bendleHard_Character","Wu");
+      break;
+    case 169:
+      localStorage.setItem("bendleHard_Character","Xin Fu");
+      break;
+    case 170:
+      localStorage.setItem("bendleHard_Character","Yagoda");
+      break;
+    case 171:
+      localStorage.setItem("bendleHard_Character","Yakone");
+      break;
+    case 172:
+      localStorage.setItem("bendleHard_Character","Yangchen");
+      break;
+    case 173:
+      localStorage.setItem("bendleHard_Character","Yeh-Lu");
+      break;
+    case 174:
+      localStorage.setItem("bendleHard_Character","Yin");
+      break;
+    case 175:
+      localStorage.setItem("bendleHard_Character","Yon Rha");
+      break;
+    case 176:
+      localStorage.setItem("bendleHard_Character","Yu");
+      break;
+    case 177:
+      localStorage.setItem("bendleHard_Character","Yung");
+      break;
+    case 178:
+      localStorage.setItem("bendleHard_Character","Yung (captain)");
+      break;
+    case 179:
+      localStorage.setItem("bendleHard_Character","Zaheer");
+      break;
+    case 180:
+      localStorage.setItem("bendleHard_Character","Zei");
+      break;
+    case 181:
+      localStorage.setItem("bendleHard_Character","Zhu Li Moon");
+      break;
   }
 } 
 
 function setImpossibleCharacter() {
-  number = Math.floor(Math.random()*168);
+  number = Math.floor(Math.random()*182);
   switch (number) {
     case 0:
       localStorage.setItem("bendleImpossible_Character","Aang");
@@ -1356,6 +1398,48 @@ function setImpossibleCharacter() {
       break;
     case 167:
       localStorage.setItem("bendleImpossible_Character","Wei and Wing");
+      break;
+    case 168:
+      localStorage.setItem("bendleImpossible_Character","Wu");
+      break;
+    case 169:
+      localStorage.setItem("bendleImpossible_Character","Xin Fu");
+      break;
+    case 170:
+      localStorage.setItem("bendleImpossible_Character","Yagoda");
+      break;
+    case 171:
+      localStorage.setItem("bendleImpossible_Character","Yakone");
+      break;
+    case 172:
+      localStorage.setItem("bendleImpossible_Character","Yangchen");
+      break;
+    case 173:
+      localStorage.setItem("bendleImpossible_Character","Yeh-Lu");
+      break;
+    case 174:
+      localStorage.setItem("bendleImpossible_Character","Yin");
+      break;
+    case 175:
+      localStorage.setItem("bendleImpossible_Character","Yon Rha");
+      break;
+    case 176:
+      localStorage.setItem("bendleImpossible_Character","Yu");
+      break;
+    case 177:
+      localStorage.setItem("bendleImpossible_Character","Yung");
+      break;
+    case 178:
+      localStorage.setItem("bendleImpossible_Character","Yung (captain)");
+      break;
+    case 179:
+      localStorage.setItem("bendleImpossible_Character","Zaheer");
+      break;
+    case 180:
+      localStorage.setItem("bendleImpossible_Character","Zei");
+      break;
+    case 181:
+      localStorage.setItem("bendleImpossible_Character","Zhu Li Moon");
       break;
     }
   }

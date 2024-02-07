@@ -806,6 +806,7 @@ function howToPlay() {
 }
 
 function homeScreen() {
+  //temp
   loadGameNormal()
   home = document.getElementById("homeScreen");
   if (home.className == "homeScreen") {

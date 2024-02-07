@@ -2236,17 +2236,7 @@ function howToPlay() {
 }
 
 function homeScreen() {
-  if (localStorage.getItem("bendleHard_correct") == 1) {
-    document.getElementById("resultsHard").textContent = (localStorage.getItem("bendleHard_Character") + " (" + hardGuess + ")")
-    document.getElementById("resultsHard").style.color = "green";
-  }else {
-    if (localStorage.getItem("bendleHard_guessCount") == 8) {
-      document.getElementById("resultsHard").textContent = (localStorage.getItem("bendleHard_Character"))
-      document.getElementById("resultsHard").style.color = "red";
-    }else {
-      document.getElementById("resultsHard").textContent = ("Not Finished");
-    }
-  }
+ loadGameHard()
   home = document.getElementById("homeScreen");
   if (home.className == "homeScreen") {
     document.getElementById("homeScreen").className = "nothing";

@@ -1,18 +1,3 @@
-  // "": [{characterName: "",
-  // ethnicityTitle: "",
-  // nationalityTitle: "",
-  // fightingTitle: "",
-  // genderTitle: "",
-  // speciesTitle: "",
-  // bornTitle: "",
-  // diedTitle: "",
-  // infoTitle: "",
-  // addInfoTitle: "",
-  // pictureTitle: "<img src='characterPictures/Picture.webp'> </img>",
-  // wikiLink: "<a href='' class='ATLALink'> Avatar Wiki</a>"}],
-
-// Variable Declartion Area
-
 const initialSelection = SelectaCharacter.textContent;
 const initialID = SelectaCharacter;
 
@@ -2251,6 +2236,10 @@ function howToPlay() {
 }
 
 function homeScreen() {
+  loadGameEasy()
+  loadGameNormal()
+  loadGameHard()
+  loadGameImpossible()
   home = document.getElementById("homeScreen");
   if (home.className == "homeScreen") {
     document.getElementById("homeScreen").className = "nothing";

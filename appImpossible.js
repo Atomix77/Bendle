@@ -2251,7 +2251,17 @@ function howToPlay() {
 }
 
 function homeScreen() {
-  loadGameImpossible()
+  if (localStorage.getItem("bendleImpossible_correct") == 1) {
+    document.getElementById("resultsImpossible").textContent = (localStorage.getItem("bendleImpossible_Character") + " (" + impossibleGuess + ")")
+    document.getElementById("resultsImpossible").style.color = "green";
+  }else {
+    if (localStorage.getItem("bendleImpossible_guessCount") == 8) {
+      document.getElementById("resultsImpossible").textContent = (localStorage.getItem("bendleImpossible_Character"))
+      document.getElementById("resultsImpossible").style.color = "red";
+    }else {
+      document.getElementById("resultsImpossible").textContent = ("Not Finished");
+    }
+  }
   home = document.getElementById("homeScreen");
   if (home.className == "homeScreen") {
     document.getElementById("homeScreen").className = "nothing";

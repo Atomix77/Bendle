@@ -291,7 +291,18 @@ function howToPlay() {
 }
 
 function homeScreen() {
-  loadGameEasy()
+  if (localStorage.getItem("bendleEasy_correct") == 1) {
+    document.getElementById("resultsEasy").textContent = (localStorage.getItem("bendleEasy_Character") + " (" + easyGuess + ")")
+    document.getElementById("resultsEasy").style.color = "green";
+  }else {
+    if (localStorage.getItem("bendleEasy_guessCount") == 8) {
+      document.getElementById("resultsEasy").textContent = (localStorage.getItem("bendleEasy_Character"))
+      document.getElementById("resultsEasy").style.color = "red";
+    }else {
+      document.getElementById("resultsEasy").textContent = ("Not Finished");
+    }
+  }
+  
   home = document.getElementById("homeScreen");
   if (home.className == "homeScreen") {
     document.getElementById("homeScreen").className = "nothing";

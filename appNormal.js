@@ -806,8 +806,17 @@ function howToPlay() {
 }
 
 function homeScreen() {
-  //temp
-  loadGameNormal()
+  if (localStorage.getItem("bendleNormal_correct") == 1) {
+    document.getElementById("resultsNormal").textContent = (localStorage.getItem("bendleNormal_Character") + " (" + normalGuess + ")")
+    document.getElementById("resultsNormal").style.color = "green";
+  }else {
+    if (localStorage.getItem("bendleNormal_guessCount") == 8) {
+      document.getElementById("resultsNormal").textContent = (localStorage.getItem("bendleNormal_Character"))
+      document.getElementById("resultsNormal").style.color = "red";
+    }else {
+      document.getElementById("resultsNormal").textContent = ("Not Finished");
+    }
+  }
   home = document.getElementById("homeScreen");
   if (home.className == "homeScreen") {
     document.getElementById("homeScreen").className = "nothing";

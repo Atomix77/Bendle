@@ -2488,7 +2488,6 @@ function submitGuess() {
 }
 
 function correctGuess() {
-  loadGameHard()
   count += 1;
   document.getElementById("guess" + (count)).className = "guess";
   guess = document.getElementById("guess" + (count));

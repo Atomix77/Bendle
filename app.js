@@ -11,7 +11,9 @@ function timeChecker() {
   year = now.getUTCFullYear();
   nowDate = (day + "" + month + "" + year);
   if (currentDate != nowDate) {
-    setGameInfo()
+    if (localStorage.getItem("bendleSetUp") != 1) {
+      setGameInfo()
+    }
     localStorage.setItem("currentDate",nowDate);
   }
 }
@@ -1445,6 +1447,7 @@ function setImpossibleCharacter() {
   }
 
 function loadGameEasy() {
+
   if (localStorage.getItem("bendleEasy_correct") == 1) {
     for (let x = 0; x < easyGuess; x++) {
       document.getElementById("guess" + (x+1)).className = "guess";

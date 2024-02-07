@@ -2236,10 +2236,7 @@ function howToPlay() {
 }
 
 function homeScreen() {
-  loadGameEasy()
-  loadGameNormal()
   loadGameHard()
-  loadGameImpossible()
   home = document.getElementById("homeScreen");
   if (home.className == "homeScreen") {
     document.getElementById("homeScreen").className = "nothing";

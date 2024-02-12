@@ -2509,9 +2509,11 @@ function correctGuess() {
   guess.textContent = currentID.textContent;
   guess.style.color = "green";
   guessCount = count;
+  impossibleGuess = guessCount;
   localStorage.setItem("bendleImpossible_guess" + (count), guess.textContent);
   localStorage.setItem("bendleImpossible_guessCount", guessCount);
   localStorage.setItem("bendleImpossible_correct",1);
+  document.getElementById("resultsImpossible").textContent = (localStorage.getItem("bendleImpossible_Character") + " (" + impossibleGuess + ")")
   document.getElementById("nationalityTitle").className = "descriptions";
   document.getElementById("nationInfo").className = "information";
   document.getElementById("fightingTitle").className = "descriptions";

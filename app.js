@@ -2352,11 +2352,11 @@ function loadGameImpossible() {
   }
 
   if (localStorage.getItem("bendleEasy_correct") == 1) {
-    document.getElementById("resultsEasy").textContent = (localStorage.getItem("bendleEasy_Character") + " (" + easyGuess + ")")
+    document.getElementById("resultsEasy").textContent = (localStorage.getItem("bendleEasy_Character") + " (" + easyGuess + ")");
     document.getElementById("resultsEasy").style.color = "green";
   }else {
     if (localStorage.getItem("bendleEasy_guessCount") == 8) {
-      document.getElementById("resultsEasy").textContent = (localStorage.getItem("bendleEasy_Character"))
+      document.getElementById("resultsEasy").textContent = (localStorage.getItem("bendleEasy_Character"));
       document.getElementById("resultsEasy").style.color = "red";
     }else {
       document.getElementById("resultsEasy").textContent = ("Not Finished");
@@ -2364,11 +2364,11 @@ function loadGameImpossible() {
   }
 
   if (localStorage.getItem("bendleNormal_correct") == 1) {
-    document.getElementById("resultsNormal").textContent = (localStorage.getItem("bendleNormal_Character") + " (" + normalGuess + ")")
+    document.getElementById("resultsNormal").textContent = (localStorage.getItem("bendleNormal_Character") + " (" + normalGuess + ")");
     document.getElementById("resultsNormal").style.color = "green";
   }else {
     if (localStorage.getItem("bendleNormal_guessCount") == 8) {
-      document.getElementById("resultsNormal").textContent = (localStorage.getItem("bendleNormal_Character"))
+      document.getElementById("resultsNormal").textContent = (localStorage.getItem("bendleNormal_Character"));
       document.getElementById("resultsNormal").style.color = "red";
     }else {
       document.getElementById("resultsNormal").textContent = ("Not Finished");
@@ -2376,11 +2376,11 @@ function loadGameImpossible() {
   }
 
   if (localStorage.getItem("bendleHard_correct") == 1) {
-    document.getElementById("resultsHard").textContent = (localStorage.getItem("bendleHard_Character") + " (" + hardGuess + ")")
+    document.getElementById("resultsHard").textContent = (localStorage.getItem("bendleHard_Character") + " (" + hardGuess + ")");
     document.getElementById("resultsHard").style.color = "green";
   }else {
     if (localStorage.getItem("bendleHard_guessCount") == 8) {
-      document.getElementById("resultsHard").textContent = (localStorage.getItem("bendleHard_Character"))
+      document.getElementById("resultsHard").textContent = (localStorage.getItem("bendleHard_Character"));
       document.getElementById("resultsHard").style.color = "red";
     }else {
       document.getElementById("resultsHard").textContent = ("Not Finished");

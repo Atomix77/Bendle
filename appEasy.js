@@ -549,9 +549,11 @@ function correctGuess() {
   guess.textContent = currentID.textContent;
   guess.style.color = "green";
   guessCount = count;
+  easyGuess = guessCount;
   localStorage.setItem("bendleEasy_guess" + (count), guess.textContent);
   localStorage.setItem("bendleEasy_guessCount", guessCount);
   localStorage.setItem("bendleEasy_correct",1);
+  document.getElementById("resultsEasy").textContent = (localStorage.getItem("bendleEasy_Character") + " (" + easyGuess + ")");
   document.getElementById("nationalityTitle").className = "descriptions";
   document.getElementById("nationInfo").className = "information";
   document.getElementById("fightingTitle").className = "descriptions";

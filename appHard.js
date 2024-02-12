@@ -1601,7 +1601,7 @@ const characterDictionary = {
   genderTitle: "Woman",
   speciesTitle: "Human",
   bornTitle: "Unknown",
-  diedTitle: "unknown/Alive",
+  diedTitle: "Unknown/Alive",
   infoTitle: "Freedom Fighter",
   addInfoTitle: "Leader of the Freedom Fighters",
   pictureTitle: "<img src='characterPictures/SmellerbeePicture.webp'> </img>",

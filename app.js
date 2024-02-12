@@ -1609,9 +1609,6 @@ function loadGameEasy() {
           document.getElementById("guess" + (x+1)).className = "guess";
           guess = document.getElementById("guess" + (x+1));
           guess.textContent = localStorage.getItem("bendleEasy_guess" + (x+1));
-          if (x+1 == easyGuess) {
-            guess.style.color = "green";
-          }
         }
         document.getElementById("nationalityTitle").className = "descriptions";
         document.getElementById("nationInfo").className = "information";
@@ -1851,9 +1848,6 @@ function loadGameNormal() {
           document.getElementById("guess" + (x+1)).className = "guess";
           guess = document.getElementById("guess" + (x+1));
           guess.textContent = localStorage.getItem("bendleNormal_guess" + (x+1));
-          if (x+1 == normalGuess) {
-            guess.style.color = "green";
-          }
         }
         document.getElementById("nationalityTitle").className = "descriptions";
         document.getElementById("nationInfo").className = "information";
@@ -2093,9 +2087,6 @@ function loadGameHard() {
           document.getElementById("guess" + (x+1)).className = "guess";
           guess = document.getElementById("guess" + (x+1));
           guess.textContent = localStorage.getItem("bendleHard_guess" + (x+1));
-          if (x+1 == hardGuess) {
-            guess.style.color = "green";
-          }
         }
         document.getElementById("nationalityTitle").className = "descriptions";
         document.getElementById("nationInfo").className = "information";
@@ -2335,9 +2326,6 @@ function loadGameImpossible() {
           document.getElementById("guess" + (x+1)).className = "guess";
           guess = document.getElementById("guess" + (x+1));
           guess.textContent = localStorage.getItem("bendleImpossible_guess" + (x+1));
-          if (x+1 == guessCountImpossible) {
-            guess.style.color = "green";
-          }
         }
         document.getElementById("nationalityTitle").className = "descriptions";
         document.getElementById("nationInfo").className = "information";

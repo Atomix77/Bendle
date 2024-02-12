@@ -8,7 +8,7 @@ const Countdown = (() => {
       let time = (nextMidnight.getTime() - now.getTime())/1000;   
       if(time < 0) {
         nextMidnight = new Date();
-        nextMidnight.setHours(24,0,0,0); 
+        nextMidnight.setHours(24,0,0,0);
         return getRemainingTime();
       }
       return time;

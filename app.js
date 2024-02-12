@@ -11,9 +11,7 @@ function timeChecker() {
   year = now.getUTCFullYear();
   nowDate = (day + "" + month + "" + year);
   if (currentDate != nowDate) {
-    if (localStorage.getItem("bendleSetUp") != 1) {
-      setGameInfo()
-    }
+    setGameInfo()
     localStorage.setItem("currentDate",nowDate);
   }
 }
